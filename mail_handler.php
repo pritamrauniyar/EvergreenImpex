@@ -7,8 +7,8 @@ $message= $_POST['msg'];
 $to = "pritamrauniyar.np@gmail.com";
 $subject = "New User Contact Request";
 $txt ="First Name = ". $firstname .  " Last Name =".$lastname."    \r\n    Email = " . $email . "\r\n  Mobile Number = ". $Mobile . "\r\n  Message =" . $message;
-$headers = "From: support@sanjivaneesaccosjnk.com.np" . "\r\n" .
-"CC: support@sanjivaneesaccosjnk.com.np";
+$headers = "From: pritamrauniyar.np@gmail.com" . "\r\n" .
+"CC: pritamrauniyar.np@gmail.com";
 if($email!=NULL){
     mail($to,$subject,$txt,$headers);
 }
